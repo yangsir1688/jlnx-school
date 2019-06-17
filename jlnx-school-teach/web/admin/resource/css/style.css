@@ -1,0 +1,462 @@
+/*头部*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top {
+    height: 90px;
+    width: 100%;
+    background-color: #008CBF;
+}
+
+.title {
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.time {
+    position: absolute;
+    top: 50px;
+    right: 285px;
+    color: #FFFFFF;
+}
+
+.adminInfo {
+    position: absolute;
+    top: 50px;
+    right: 105px;
+    color: #fff;
+}
+
+/* 左侧 */
+.left {
+    width: 205px;
+    height: 530px;
+    border-right: 0.1px solid;
+    border-color: deepskyblue;
+    background-color: #EEF5FB;
+
+}
+
+.left ul {
+    list-style: none;
+    text-align: center;
+    /*padding-left: 35px;*/
+}
+
+.left ul li span {
+    cursor: pointer;
+    display: block;
+    background-color: lightgray;
+    height: 34px;
+    margin-top: 5px;
+    font-weight: bolder;
+    color: dodgerblue;
+    border-right: 0.1px solid;
+    border-color: deepskyblue;
+}
+
+.current {
+    display: block;
+}
+
+.wrap {
+    display: none;
+}
+
+.wrap li {
+    height: 34px;
+    color: #1A5567;
+}
+
+.wrap li a:link {
+    text-decoration: none;
+}
+
+.wrap li a:hover {
+
+}
+
+/*右侧*/
+/*Form*/
+.formbody {
+    padding: 10px 18px;
+}
+
+.formtitle, .formtitle1 {
+    border-bottom: solid 1px #d0dee5;
+    line-height: 35px;
+    position: relative;
+    height: 35px;
+    margin-bottom: 28px;
+}
+
+.forminfo {
+    padding-left: 23px;
+    list-style: none;
+}
+
+.forminfo li {
+    margin-bottom: 13px;
+    clear: both;
+}
+
+.forminfo li label {
+    width: 86px;
+    line-height: 34px;
+    display: block;
+    float: left;
+}
+
+.forminfo li i {
+    color: #7f7f7f;
+    padding-left: 20px;
+    font-style: normal;
+}
+
+.forminfo li cite {
+    display: block;
+    padding-top: 10px;
+}
+
+.dfinput {
+    width: 345px;
+    height: 32px;
+    line-height: 32px;
+    border-top: solid 1px #a7b5bc;
+    border-left: solid 1px #a7b5bc;
+    border-right: solid 1px #ced9df;
+    border-bottom: solid 1px #ced9df;
+    background: url(/admin/resource/img/inputbg.gif) repeat-x;
+    text-indent: 10px;
+}
+
+.textinput {
+    border-top: solid 1px #a7b5bc;
+    border-left: solid 1px #a7b5bc;
+    border-right: solid 1px #ced9df;
+    border-bottom: solid 1px #ced9df;
+    background: url(/admin/admin/resource/img/inputbg.gif) repeat-x;
+    padding: 10px;
+    width: 504px;
+    height: 135px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.btn {
+    width: 137px;
+    height: 35px;
+    background: url(/admin/resource/img/btnbg.png) no-repeat;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*right.html 查询用户时右侧的页面*/
+.place {
+    height: 40px;
+    background: url(/admin/resource/img/righttop.gif) repeat-x;
+    list-style: none;
+}
+
+.place span {
+    line-height: 40px;
+    font-weight: bold;
+    float: left;
+    margin-left: 12px;
+}
+
+.placeul li {
+    float: left;
+    line-height: 40px;
+    padding-left: 7px;
+    padding-right: 12px;
+    background: url(/admin/resource/img/rlist.gif) no-repeat right;
+}
+
+.placeul li:last-child {
+    background: none;
+}
+
+.rightinfo {
+    padding: 8px;
+}
+
+.tools {
+    clear: both;
+    height: 35px;
+    margin-bottom: 8px;
+}
+
+.toolbar {
+    float: left;
+}
+
+.toolbar li {
+    background: url(/admin/resource/img/toolbg.gif) repeat-x;
+    line-height: 33px;
+    height: 33px;
+    border: solid 1px #d3dbde;
+    float: left;
+    padding-right: 10px;
+    margin-right: 5px;
+    border-radius: 3px;
+    behavior: url(/admin/resource/js/pie.htc);
+    cursor: pointer;
+}
+
+.toolbar li span {
+    float: left;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.toolbar1 {
+    float: right;
+}
+
+.toolbar1 li {
+    background: url(/admin/resource/img/toolbg.gif) repeat-x;
+    line-height: 33px;
+    height: 33px;
+    border: solid 1px #d3dbde;
+    float: left;
+    padding-right: 10px;
+    margin-left: 5px;
+    border-radius: 3px;
+    behavior: url(/admin/resource/js/pie.htc);
+}
+
+.toolbar1 li span {
+    float: left;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.tablelist {
+    border: solid 1px #cbcbcb;
+    width: 100%;
+    clear: both;
+}
+
+.tablelist th {
+    background: url(/admin/resource/img/th.gif) repeat-x;
+    height: 34px;
+    line-height: 34px;
+    border-bottom: solid 1px #b6cad2;
+    text-indent: 11px;
+    text-align: left;
+}
+
+.tablelist td {
+    line-height: 35px;
+    text-indent: 11px;
+    border-right: dotted 1px #c7c7c7;
+}
+
+.tablelink {
+    color: #056dae;
+    text-decoration: none;
+}
+
+.tablelist tbody tr.odd {
+    background: #f5f8fa;
+}
+
+.tablelist tbody tr:hover {
+    background: #e5ebee;
+}
+
+.sort {
+    padding-left: 3px;
+}
+
+/*page 页面中的分页组件*/
+.pagin {
+    position: relative;
+    margin-top: 10px;
+    padding: 0 12px;
+}
+
+.pagin .blue {
+    color: #056dae;
+    font-style: normal;
+}
+
+.pagin .paginList {
+    position: absolute;
+    right: 12px;
+    top: 0;
+}
+
+.pagin .paginList .paginItem {
+    float: left;
+}
+
+.pagin .paginList .paginItem a {
+    float: left;
+    width: 50px;
+    height: 28px;
+    border: 1px solid #DDD;
+    text-align: center;
+    line-height: 30px;
+    border-left: none;
+    color: #3399d5;
+}
+
+.pagin .paginList .paginItem:first-child a {
+    border-left: 1px solid #DDD;
+}
+
+.pagin .paginList .paginItem:first-child a {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.pagin .paginList .paginItem:last-child a {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.pagin .paginList .paginItem.current, .pagin .paginList .paginItem.current a {
+    background: #f5f5f5;
+    cursor: default;
+    color: #737373;
+}
+
+.pagin .paginList .paginItem:hover {
+    background: #f5f5f5;
+}
+
+.pagin .paginList .paginItem.more, .pagin .paginList .paginItem.more a:hover {
+    cursor: default;
+}
+
+.pagin .paginList .paginItem.more:hover {
+    background: #FFF;
+}
+
+.pagin .paginList .paginItem.more a {
+    color: #737373;
+}
+
+.pagepre {
+    background: url(/admin/resource/img/pre.gif) no-repeat center center;
+    width: 31px;
+    height: 28px;
+}
+
+.pagenxt {
+    background: url(/admin/resource/img/next.gif) no-repeat center center;
+    width: 31px;
+    height: 28px;
+}
+
+/*tip: JavaScript的提示信息*/
+.tip {
+    width: 485px;
+    height: 260px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    background: #fcfdfd;
+    box-shadow: 1px 8px 10px 1px #9b9b9b;
+    border-radius: 1px;
+    behavior: url(/admin/resource/js/pie.htc);
+    display: none;
+    z-index: 111111;
+}
+
+.tiptop {
+    height: 40px;
+    line-height: 40px;
+    background: url(/admin/resource/img/tcbg.gif) repeat-x;
+    cursor: pointer;
+}
+
+.tiptop span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+    text-indent: 20px;
+}
+
+.tiptop a {
+    display: block;
+    background: url(/admin/resource/img/close.png) no-repeat;
+    width: 22px;
+    height: 22px;
+    float: right;
+    margin-right: 7px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.tiptop a:hover {
+    background: url(/admin/resource/img/close1.png) no-repeat;
+}
+
+.tipinfo {
+    padding-top: 30px;
+    margin-left: 65px;
+    height: 95px;
+}
+
+.tipinfo span {
+    width: 95px;
+    height: 95px;
+    float: left;
+}
+
+.tipright {
+    float: left;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.tipright p {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.tipright cite {
+    color: #858686;
+}
+
+.tipbtn {
+    margin-top: 25px;
+    margin-left: 125px;
+}
+
+.sure, .cancel {
+    width: 96px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    background: url(/admin/resource/img/btnbg1.png) repeat-x;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cancel {
+    background: url(/admin/resource/img/btnbg2.png) repeat-x;
+    color: #000;
+    font-weight: normal;
+}
+
+
+
